@@ -28,6 +28,7 @@ if(webApplicationTitle == "Swag Labs"):
     print("Application title verified successfully")
 else:
     print("Application title verified failed")
+# driver.find_element(By.XPATH,"//input[@id='user-name']").send_keys("suryadevi")
 driver.find_element(By.CSS_SELECTOR,"#user-name").send_keys("Thivakar")
 driver.find_element(By.CSS_SELECTOR,"#password").send_keys("Testing")
 driver.find_element(By.ID,"login-button").click()
@@ -35,5 +36,5 @@ error_Message =driver.find_element(By.TAG_NAME,"h3")
 if(error_Message.is_displayed()):
     print("Error Message visible")
 else:
-    print("Error Message Not Visible")
+    print("Error Message Not Visible");
 driver.close()
